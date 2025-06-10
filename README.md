@@ -10,7 +10,7 @@ This project is the deployment of a Windows Server Domain Controller (Active Dir
 **CyberTech Solutions** is a small IT services firm with the following structure:
 
 - 1 x Windows Server (AD Domain Controller)
-- 1 x Windows 8 Client PC (Account Department)
+- 1 x Windows 10 Client PC (Account Department)
 - 1 x Windows 7 Client PC (Legacy Software)
 
 ---
@@ -35,7 +35,7 @@ Router (Gateway: 10.0.5.1)
 Switch
  ┌──────┬─────────────┬──────────────┐
  │      │             │              │
-Server  PC1 (Win 8)   PC2 (Win XP)
+Server  PC1 (Win 10)   PC2 (Win 7)
 ```
 
 | Device        | IP Address      | Role                        |
@@ -50,7 +50,7 @@ Server  PC1 (Win 8)   PC2 (Win XP)
 
 - **Domain Name**: `cybertech.local`
 - **Server Name**: `CYBERTECH`
-- **Static IP**: `10.0.5.5`
+- **Static IP**: `10.0.5.4`
 - **AD Roles Installed**: AD DS, DNS (DHCP)
 
 ---
@@ -62,11 +62,11 @@ Created using **Active Directory Users and Computers**:
 ```
 CyberTech.local
 ├── OU: IT Department
-│   └── Users: Alex.IT
-    └── Users: Charles.IT
+│   └── Users: Josh.IT
 
-├── OU: Sales
-│   └── Users:
+
+├── OU: HR
+│   └── Users: Ayo.HR
 ```
 
 ---
@@ -83,6 +83,13 @@ Created and linked using **Group Policy Management Console (gpmc.msc)**:
 
 Result: USB and external drives are disabled for all users in the **Accounts OU**.
 
+- **GPO Name**: `DisablePoweroffRestartOptions`
+- **Linked to**: OU: HR Department
+- **Policy Configured**:
+  - `Computer Configuration` > `Administrative Templates` > `System` > `Removable Storage Access`
+  - Set **"Remove and prevent all access to shutdown,restart and hibernate commands"** to **Enabled**
+
+Result: commans disabled for all users in the **HR and IT OU**.
 ---
 
 ## Screenshots
