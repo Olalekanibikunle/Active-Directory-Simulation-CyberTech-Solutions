@@ -94,7 +94,7 @@ Result: commans disabled for all users in the **HR and IT OU**.
 
 ## Screenshots
 
-- [AD Domain Structure](https://github.com/Olalekanibikunle/Active-Directory-Simulation-CyberTech-Solutions/blob/main/Screenshots/OUs_Groups_Users.PNG)(https://github.com/Olalekanibikunle/Active-Directory-Simulation-CyberTech-Solutions/blob/main/Screenshots/OUs_Groups_User2.PNG)
+- [AD Domain Structure][https://github.com/Olalekanibikunle/Active-Directory-Simulation-CyberTech-Solutions/blob/main/Screenshots/OUs_Groups_Users.PNG](https://github.com/Olalekanibikunle/Active-Directory-Simulation-CyberTech-Solutions/blob/main/Screenshots/OUs_Groups_User2.PNG)
 - [GPO Editor Screenshot](https://github.com/Olalekanibikunle/Active-Directory-Simulation-CyberTech-Solutions/blob/main/Screenshots/Group_policy_management.PNG)
 - [PC joined to domain](https://github.com/Olalekanibikunle/Active-Directory-Simulation-CyberTech-Solutions/blob/main/Screenshots/windows_machine_connection.PNG)
 - [Result of denied command access](https://github.com/Olalekanibikunle/Active-Directory-Simulation-CyberTech-Solutions/blob/main/Screenshots/AccessDenied.PNG)
